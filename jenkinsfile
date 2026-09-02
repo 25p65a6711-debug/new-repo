@@ -1,1 +1,12 @@
-print(5+2)
+pipeline {
+    agent any
+
+    stages {
+        stage('print number') {
+            steps {
+                echo '9'
+            }
+        }
+    }
+}
+
